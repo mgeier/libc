@@ -84,7 +84,7 @@ jobs:
             mingw-w64-x86_64-rust
       - uses: actions/checkout@v2
       - name: Execute run.sh
-        run: LIBC_CI=1 sh ./ci/run.sh x86_64-pc-windows-gnu
+        run: LIBC_CI=1 sh ./ci/run.sh x86_64-pc-windows-msvc
 
   style_check:
     name: Style check
